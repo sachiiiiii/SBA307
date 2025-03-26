@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>Got a Question? Reach Out</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="general">General Inquiry</option>
+                <option value="product-support">Product-Related Support</option>
+                <option value="collection-support">Collection-Related Support</option>
+                <option value="employment">Employment</option>
+            </select>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <section class="contact-info">
+            <p>Email: example@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </section>
+        <p>&copy; 2025 My Shop</p>
+    </footer>
 </body>
 </html>
